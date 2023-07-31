@@ -7,17 +7,20 @@ public class Player : MonoBehaviour
     [HideInInspector]
 	public GameObject gameManager;
 
-    public enum PlayerClass {Human, Orc, Draenei, Tauren};
+    public enum PlayerClass {HumanHuntress, OrcShaman, DraeneiDK, TaurenWarrior};
     public PlayerClass playerClass; 
 
     [HideInInspector]
     public Vector3 playerStartPosition;
 
-    [HideInInspector]
-    public int currentHP, maxHP;
+	public int coins;
 
-    //RPG Stats
-    [HideInInspector]
+	[HideInInspector]
+    public int currentHP, maxHP;
+	public int currentMP, maxMP;
+
+	//RPG Stats
+	[HideInInspector]
     public int attack, defense;
 
     private float moveSpeed;
@@ -39,6 +42,21 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
+        // Set Base Values depending on choice of class
+        switch (playerClass)
+        {
+
+            case PlayerClass.HumanHuntress:
+                break;
+            case PlayerClass.OrcShaman:
+                break;
+            case PlayerClass.DraeneiDK:
+                break;
+            case PlayerClass.TaurenWarrior: 
+                break;
+        }
+
         currentHP = maxHP;
     }
 
@@ -62,7 +80,12 @@ public class Player : MonoBehaviour
 
     }
 
-    public void PickUpItem()
+	public void Jump()
+	{
+
+	}
+
+	public void PickUpItem()
     {
 
     }

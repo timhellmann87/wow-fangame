@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7627770245670913257}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -76,9 +76,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 0}
+  playerClass: 0
   playerStartPosition: {x: 0, y: 0, z: 0}
   currentHP: 0
   maxHP: 0
+  currentMP: 0
+  maxMP: 0
   attack: 0
   defense: 0
   helmetHolder: {fileID: 0}
