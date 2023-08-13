@@ -7,12 +7,12 @@
             "actions": [
                 {
                     "name": "MovePlayer",
-                    "type": "PassThrough",
+                    "type": "Value",
                     "id": "66f304b0-ef79-4c70-98d2-1dbaca6ea4e0",
                     "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": false
+                    "initialStateCheck": true
                 },
                 {
                     "name": "Attack",
@@ -45,6 +45,15 @@
                     "name": "Pause",
                     "type": "Button",
                     "id": "8cb722ce-da98-4759-af61-843cd5bc382a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "9bfb0b00-6fc5-4ada-beee-54097e3c9f64",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -175,6 +184,17 @@
                 },
                 {
                     "name": "",
+                    "id": "40c27c5b-80a6-4d54-8868-5c41c5c369b4",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "GamePad",
+                    "action": "MovePlayer",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "8ab0a39a-00d3-4293-a81f-83be89f34ffb",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -280,6 +300,28 @@
                     "processors": "",
                     "groups": "KeyboardMouse",
                     "action": "Pause",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "48163eb3-d72d-4acd-b821-3e160d91ea68",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9556134c-8e39-4552-9c0f-318e0e211f69",
+                    "path": "<Gamepad>/buttonSouth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "GamePad",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
